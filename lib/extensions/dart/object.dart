@@ -129,7 +129,7 @@ extension ObjectExt on Object? {
 
   ///log: Logs the object.
   void get log {
-    if (this.isNull) print('null');
+    if (isNull) print('null');
     print(this);
   }
 

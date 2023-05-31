@@ -1,0 +1,25 @@
+name: stape
+description: A dart extension library.
+version: 1.0.0
+
+environment:
+  sdk: ^3.0.2
+
+repository: https://github.com/Sten435/stape_library
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+
+topics:
+  - dart
+  - extension
+  - library
+
+dependencies:
+dev_dependencies:
+  lints: ^2.0.0

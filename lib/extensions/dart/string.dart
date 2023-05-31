@@ -1,7 +1,7 @@
 import 'number.dart';
 import 'object.dart';
 
-extension isPalinDroomExt on String? {
+extension StringExt on String? {
   ///isPalinDroom: checks if the string is a palindrome
   bool get isPalinDroom {
     return this == this?.split('').reversed.join('');
@@ -9,21 +9,21 @@ extension isPalinDroomExt on String? {
 
   ///isNumeric: checks if the string is numeric
   bool isNumeric(String input) {
-    RegExp _numeric = RegExp(r'^-?[0-9]+$');
-    return _numeric.hasMatch(input);
+    RegExp numeric = RegExp(r'^-?[0-9]+$');
+    return numeric.hasMatch(input);
   }
 
   ///isAlphabetic: checks if the string is alphabetic
   bool isAlphabetic(String input) {
-    RegExp _alphabetic = RegExp(r'^[a-zA-Z]+$');
-    return _alphabetic.hasMatch(input);
+    RegExp alphabetic = RegExp(r'^[a-zA-Z]+$');
+    return alphabetic.hasMatch(input);
   }
 
   ///isAlphaNumeric: checks if the string is alpha numeric
   bool get isAlphaNumeric {
     if (isNull) return false;
-    RegExp _alphaNumeric = RegExp(r'^[a-zA-Z0-9]+$');
-    return _alphaNumeric.hasMatch(this!);
+    RegExp alphaNumeric = RegExp(r'^[a-zA-Z0-9]+$');
+    return alphaNumeric.hasMatch(this!);
   }
 
   ///isNullOrNumeric: checks if the string is null or numeric
@@ -78,7 +78,7 @@ extension isPalinDroomExt on String? {
 
   ///isValidEmail: checks if the string is a valid email address
   bool get isValidEmail {
-    return this.isNull ? false : RegExp(r'^[\w-]+(\.[\w-]+)*@[a-zA-Z\d-]+(\.[a-zA-Z\d-]+)*\.[a-zA-Z]{2,}$').hasMatch(this!);
+    return isNull ? false : RegExp(r'^[\w-]+(\.[\w-]+)*@[a-zA-Z\d-]+(\.[a-zA-Z\d-]+)*\.[a-zA-Z]{2,}$').hasMatch(this!);
   }
 
   ///toUpper: converts all characters to uppercase
@@ -201,8 +201,8 @@ extension isPalinDroomExt on String? {
   ///toBool: convert a string to bool ('true' == true, 'false' == false, '1' == true, '0' == false)
   bool get toBool {
     if (isNull) return false;
-    if (this.toLower == "true") return true;
-    if (this.toLower == "false") return false;
+    if (toLower == "true") return true;
+    if (toLower == "false") return false;
     if (this is num) return (this as num).toBool;
     return false;
   }
