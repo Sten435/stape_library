@@ -1,20 +1,29 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+## Feature Request
 
----
+### Description
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+A clear and concise description of the feature you are requesting.
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+### Use Case
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+Please provide a detailed explanation of the use case or scenario where this feature would be beneficial.
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+### Proposed Solution
+
+Describe the solution you envision for this feature request. Be as specific as possible.
+
+### Alternatives Considered
+
+Have you considered any alternative solutions or workarounds? If so, please describe them here.
+
+### Additional Context
+
+Add any additional context or information that you think might be helpful in understanding the feature request.
+
+### Related Issues/PRs
+
+Are there any related issues or pull requests that are related to this feature request? If so, please provide links.
+
+### Other Information
+
+Any other information you think might be helpful in implementing or discussing the feature request.
