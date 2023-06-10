@@ -13,7 +13,8 @@ void main() {
   print('string.isNullOrEmpty: ${string.isNullOrEmpty}');
   print('numericString.isNullOrEmpty: ${numericString.isNullOrEmpty}');
   print('alphabeticString.isNullOrEmpty: ${alphabeticString.isNullOrEmpty}');
-  print('alphaNumericString.isNullOrEmpty: ${alphaNumericString.isNullOrEmpty}\n\n');
+  print(
+      'alphaNumericString.isNullOrEmpty: ${alphaNumericString.isNullOrEmpty}\n\n');
 
   // nullString.isNullOrEmpty: true
   // emptyString.isNullOrEmpty: true
@@ -26,8 +27,10 @@ void main() {
   print('emptyString.isNotNullOrEmpty: ${emptyString.isNotNullOrEmpty}');
   print('string.isNotNullOrEmpty: ${string.isNotNullOrEmpty}');
   print('numericString.isNotNullOrEmpty: ${numericString.isNotNullOrEmpty}');
-  print('alphabeticString.isNotNullOrEmpty: ${alphabeticString.isNotNullOrEmpty}');
-  print('alphaNumericString.isNotNullOrEmpty: ${alphaNumericString.isNotNullOrEmpty}\n\n');
+  print(
+      'alphabeticString.isNotNullOrEmpty: ${alphabeticString.isNotNullOrEmpty}');
+  print(
+      'alphaNumericString.isNotNullOrEmpty: ${alphaNumericString.isNotNullOrEmpty}\n\n');
 
   // nullString.isNotNullOrEmpty: false
   // emptyString.isNotNullOrEmpty: false
@@ -40,8 +43,10 @@ void main() {
   print('emptyString.isNullOrNumeric: ${emptyString.isNullOrNumeric}');
   print('string.isNullOrNumeric: ${string.isNullOrNumeric}');
   print('numericString.isNullOrNumeric: ${numericString.isNullOrNumeric}');
-  print('alphabeticString.isNullOrNumeric: ${alphabeticString.isNullOrNumeric}');
-  print('alphaNumericString.isNullOrNumeric: ${alphaNumericString.isNullOrNumeric}\n\n');
+  print(
+      'alphabeticString.isNullOrNumeric: ${alphabeticString.isNullOrNumeric}');
+  print(
+      'alphaNumericString.isNullOrNumeric: ${alphaNumericString.isNullOrNumeric}\n\n');
 
   // nullString.isNullOrNumeric: true
   // emptyString.isNullOrNumeric: false
@@ -53,9 +58,12 @@ void main() {
   print('nullString.isNotNullOrNumeric: ${nullString.isNotNullOrNumeric}');
   print('emptyString.isNotNullOrNumeric: ${emptyString.isNotNullOrNumeric}');
   print('string.isNotNullOrNumeric: ${string.isNotNullOrNumeric}');
-  print('numericString.isNotNullOrNumeric: ${numericString.isNotNullOrNumeric}');
-  print('alphabeticString.isNotNullOrNumeric: ${alphabeticString.isNotNullOrNumeric}');
-  print('alphaNumericString.isNotNullOrNumeric: ${alphaNumericString.isNotNullOrNumeric}\n\n');
+  print(
+      'numericString.isNotNullOrNumeric: ${numericString.isNotNullOrNumeric}');
+  print(
+      'alphabeticString.isNotNullOrNumeric: ${alphabeticString.isNotNullOrNumeric}');
+  print(
+      'alphaNumericString.isNotNullOrNumeric: ${alphaNumericString.isNotNullOrNumeric}\n\n');
 
   // nullString.isNotNullOrNumeric: false
   // emptyString.isNotNullOrNumeric: true

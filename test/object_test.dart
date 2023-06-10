@@ -38,7 +38,8 @@ void main() {
       expect(obj.isNullOrZero, isTrue);
     });
 
-    test('isNullOrZero should return false when object is not null or zero', () {
+    test('isNullOrZero should return false when object is not null or zero',
+        () {
       final Object obj = 'example';
       expect(obj.isNullOrZero, isFalse);
     });
@@ -58,7 +59,8 @@ void main() {
       expect(obj.isNotNullOrZero, isFalse);
     });
 
-    test('isNotNullOrZero should return true when object is not null or zero', () {
+    test('isNotNullOrZero should return true when object is not null or zero',
+        () {
       final Object obj = 'example';
       expect(obj.isNotNullOrZero, isTrue);
     });
@@ -78,7 +80,8 @@ void main() {
       expect(obj.isNullOrFalse, isTrue);
     });
 
-    test('isNullOrFalse should return false when object is not null or false', () {
+    test('isNullOrFalse should return false when object is not null or false',
+        () {
       final Object obj = true;
       expect(obj.isNullOrFalse, isFalse);
     });
