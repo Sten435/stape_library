@@ -7,9 +7,9 @@ name: Dart
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
   pull_request:
-    branches: [ "main" ]
+    branches: ['main']
 
 jobs:
   build:
@@ -24,9 +24,9 @@ jobs:
 
       - name: Verify formatting
         run: dart format --output=none --set-exit-if-changed .
-        
-      - name: Generate documentation
-        run: dart doc
+
+      - name: Tests
+        run: dart run test
 
       - name: Analyze project source
         run: dart analyze
