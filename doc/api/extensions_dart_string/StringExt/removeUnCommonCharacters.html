@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="description" content="API docs for the isPalinDroom property from the StringExt extension, for the Dart programming language.">
-  <title>isPalinDroom property - StringExt extension - string library - Dart API</title>
+  <meta name="description" content="API docs for the removeUnCommonCharacters property from the StringExt extension, for the Dart programming language.">
+  <title>removeUnCommonCharacters property - StringExt extension - string library - Dart API</title>
 
 
   
@@ -31,9 +31,9 @@
     <li><a href="../../index.html">stape</a></li>
     <li><a href="../../extensions_dart_string/extensions_dart_string-library.html">string</a></li>
     <li><a href="../../extensions_dart_string/StringExt.html">StringExt</a></li>
-    <li class="self-crumb">isPalinDroom property</li>
+    <li class="self-crumb">removeUnCommonCharacters property</li>
   </ol>
-  <div class="self-name">isPalinDroom</div>
+  <div class="self-name">removeUnCommonCharacters</div>
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
@@ -53,7 +53,7 @@
 
   <div id="dartdoc-main-content" class="main-content">
       <div>
-<h1><span class="kind-property">isPalinDroom</span> property 
+<h1><span class="kind-property">removeUnCommonCharacters</span> property 
 </h1></div>
 
 
@@ -62,23 +62,22 @@
 
 <section class="multi-line-signature">
   
-  <span class="returntype"><a href="https://api.dart.dev/stable/3.0.3/dart-core/bool-class.html">bool</a></span>
-  <span class="name ">isPalinDroom</span>
+  <span class="returntype"><a href="https://api.dart.dev/stable/3.0.3/dart-core/String-class.html">String</a></span>
+  <span class="name ">removeUnCommonCharacters</span>
   
 
 </section>
 
 
 <section class="desc markdown">
-  <p>isPalinDroom: checks if the string is a palindrome</p>
+  <p>removeUnCommonCharacters: removes common characters from a string</p>
 </section>
 
 
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">bool get isPalinDroom {
-  return this == this?.split(&#39;&#39;).reversed.join(&#39;&#39;);
-}</code></pre>
+  <pre class="language-dart"><code class="language-dart">String get removeUnCommonCharacters =&gt;
+    this?.replaceAll(RegExp(r&#39;[^a-zA-Z0-9\s]&#39;), &#39;&#39;) ?? &quot;&quot;;</code></pre>
 </section>
 
 </section>
@@ -97,7 +96,7 @@
   <li><a href="../../index.html">stape</a></li>
   <li><a href="../../extensions_dart_string/extensions_dart_string-library.html">string</a></li>
   <li><a href="../../extensions_dart_string/StringExt.html">StringExt</a></li>
-  <li class="self-crumb">isPalinDroom property</li>
+  <li class="self-crumb">removeUnCommonCharacters property</li>
 </ol>
 
 

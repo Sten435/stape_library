@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="description" content="API docs for the isNumeric method from the StringExt extension, for the Dart programming language.">
-  <title>isNumeric method - StringExt extension - string library - Dart API</title>
+  <meta name="description" content="API docs for the isNumeric property from the StringExt extension, for the Dart programming language.">
+  <title>isNumeric property - StringExt extension - string library - Dart API</title>
 
 
   
@@ -31,7 +31,7 @@
     <li><a href="../../index.html">stape</a></li>
     <li><a href="../../extensions_dart_string/extensions_dart_string-library.html">string</a></li>
     <li><a href="../../extensions_dart_string/StringExt.html">StringExt</a></li>
-    <li class="self-crumb">isNumeric method</li>
+    <li class="self-crumb">isNumeric property</li>
   </ol>
   <div class="self-name">isNumeric</div>
   <form class="search navbar-right" role="search">
@@ -53,32 +53,37 @@
 
   <div id="dartdoc-main-content" class="main-content">
       <div>
-<h1><span class="kind-method">isNumeric</span> method 
+<h1><span class="kind-property">isNumeric</span> property 
 </h1></div>
 
-    <section class="multi-line-signature">
-      
 
-<span class="returntype"><a href="https://api.dart.dev/stable/3.0.3/dart-core/bool-class.html">bool</a></span>
-<span class="name ">isNumeric</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="isNumeric-param-input"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.0.3/dart-core/String-class.html">String</a></span> <span class="parameter-name">input</span></span></li>
-</ol>)
+        
+<section id="getter">
 
-      
+<section class="multi-line-signature">
+  
+  <span class="returntype"><a href="https://api.dart.dev/stable/3.0.3/dart-core/bool-class.html">bool</a></span>
+  <span class="name ">isNumeric</span>
+  
 
-    </section>
-    
+</section>
+
+
 <section class="desc markdown">
   <p>isNumeric: checks if the string is numeric</p>
 </section>
 
 
-    
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">bool isNumeric(String input) {
-  RegExp numeric = RegExp(r&#39;^-?[0-9]+$&#39;);
-  return numeric.hasMatch(input);
+  <pre class="language-dart"><code class="language-dart">bool get isNumeric {
+  if (isNull) return false;
+  if (this!.isEmpty) return false;
+  final numeric = RegExp(r&#39;^-?[0-9]+$&#39;);
+  return numeric.hasMatch(this!);
 }</code></pre>
+</section>
+
 </section>
 
 
@@ -95,7 +100,7 @@
   <li><a href="../../index.html">stape</a></li>
   <li><a href="../../extensions_dart_string/extensions_dart_string-library.html">string</a></li>
   <li><a href="../../extensions_dart_string/StringExt.html">StringExt</a></li>
-  <li class="self-crumb">isNumeric method</li>
+  <li class="self-crumb">isNumeric property</li>
 </ol>
 
 
@@ -106,6 +111,7 @@
 
 
         <li class="section-title"> <a href="../../extensions_dart_string/StringExt.html#instance-properties">Properties</a></li>
+          <li><a href="../../extensions_dart_string/StringExt/isAlphabetic.html">isAlphabetic</a></li>
           <li><a href="../../extensions_dart_string/StringExt/isAlphaNumeric.html">isAlphaNumeric</a></li>
           <li><a href="../../extensions_dart_string/StringExt/isEmptyTrim.html">isEmptyTrim</a></li>
           <li><a href="../../extensions_dart_string/StringExt/isNotEmptyTrim.html">isNotEmptyTrim</a></li>
@@ -119,14 +125,15 @@
           <li><a href="../../extensions_dart_string/StringExt/isNullOrEmpty.html">isNullOrEmpty</a></li>
           <li><a href="../../extensions_dart_string/StringExt/isNullOrNumeric.html">isNullOrNumeric</a></li>
           <li><a href="../../extensions_dart_string/StringExt/isNullOrWhiteSpace.html">isNullOrWhiteSpace</a></li>
+          <li><a href="../../extensions_dart_string/StringExt/isNumeric.html">isNumeric</a></li>
           <li><a href="../../extensions_dart_string/StringExt/isPalinDroom.html">isPalinDroom</a></li>
-          <li><a href="../../extensions_dart_string/StringExt/isValidEmail.html">isValidEmail</a></li>
-          <li><a href="../../extensions_dart_string/StringExt/removeCommonCharacters.html">removeCommonCharacters</a></li>
           <li><a href="../../extensions_dart_string/StringExt/removeEmptyLines.html">removeEmptyLines</a></li>
           <li><a href="../../extensions_dart_string/StringExt/removeExtraNewLines.html">removeExtraNewLines</a></li>
           <li><a href="../../extensions_dart_string/StringExt/removeExtraReturns.html">removeExtraReturns</a></li>
           <li><a href="../../extensions_dart_string/StringExt/removeExtraSpaces.html">removeExtraSpaces</a></li>
           <li><a href="../../extensions_dart_string/StringExt/removeExtraTabs.html">removeExtraTabs</a></li>
+          <li><a href="../../extensions_dart_string/StringExt/removeUnCommonCharacters.html">removeUnCommonCharacters</a></li>
+          <li><a href="../../extensions_dart_string/StringExt/reverse.html">reverse</a></li>
           <li><a href="../../extensions_dart_string/StringExt/toBool.html">toBool</a></li>
           <li><a href="../../extensions_dart_string/StringExt/toLower.html">toLower</a></li>
           <li><a href="../../extensions_dart_string/StringExt/toUpper.html">toUpper</a></li>
@@ -136,8 +143,7 @@
 
         <li class="section-title"><a href="../../extensions_dart_string/StringExt.html#instance-methods">Methods</a></li>
           <li><a href="../../extensions_dart_string/StringExt/countOccurrences.html">countOccurrences</a></li>
-          <li><a href="../../extensions_dart_string/StringExt/isAlphabetic.html">isAlphabetic</a></li>
-          <li><a href="../../extensions_dart_string/StringExt/isNumeric.html">isNumeric</a></li>
+          <li><a href="../../extensions_dart_string/StringExt/isValidEmail.html">isValidEmail</a></li>
           <li><a href="../../extensions_dart_string/StringExt/padLeft.html">padLeft</a></li>
           <li><a href="../../extensions_dart_string/StringExt/padRight.html">padRight</a></li>
           <li><a href="../../extensions_dart_string/StringExt/prefixWith.html">prefixWith</a></li>
@@ -172,7 +178,7 @@
 <footer>
   <span class="no-break">
     stape
-      1.0.1
+      1.0.7
   </span>
 
   
