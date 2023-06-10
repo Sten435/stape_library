@@ -1,6 +1,6 @@
 # Stape - Dart/Flutter Library
 
-This is the readme file for the **stape** library, a Dart/Flutter library that provides extension methods and properties to extend your codebase.
+A Dart/Flutter library that provides extension methods and properties to extend your codebase.
 
 ## Documentation
 

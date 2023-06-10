@@ -29,7 +29,8 @@ extension NumberExt on num? {
   }
 
   ///toCurrencyString place a currencySymbol next to the number
-  String toCurrencyString({int decimalPlaces = 2, String currencySymbol = '\$'}) {
+  String toCurrencyString(
+      {int decimalPlaces = 2, String currencySymbol = '\$'}) {
     if (isNull) return '';
 
     if (this is int) {

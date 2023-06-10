@@ -78,7 +78,11 @@ extension StringExt on String? {
 
   ///isValidEmail: checks if the string is a valid email address
   bool get isValidEmail {
-    return isNull ? false : RegExp(r'^[\w-]+(\.[\w-]+)*@[a-zA-Z\d-]+(\.[a-zA-Z\d-]+)*\.[a-zA-Z]{2,}$').hasMatch(this!);
+    return isNull
+        ? false
+        : RegExp(
+                r'^[\w-]+(\.[\w-]+)*@[a-zA-Z\d-]+(\.[a-zA-Z\d-]+)*\.[a-zA-Z]{2,}$')
+            .hasMatch(this!);
   }
 
   ///toUpper: converts all characters to uppercase
@@ -127,7 +131,8 @@ extension StringExt on String? {
   }
 
   ///replaceFirst: replaces the first occurrence of a substring
-  List<String> splitAndTrim(String delimiter) => this?.split(delimiter).map((str) => str.trim()).toList() ?? [];
+  List<String> splitAndTrim(String delimiter) =>
+      this?.split(delimiter).map((str) => str.trim()).toList() ?? [];
   int countOccurrences(String subString) {
     if (isNull) return 0;
     return subString.allMatches(this!).length;
@@ -141,7 +146,8 @@ extension StringExt on String? {
     if (isNull) return "";
     int index = this!.indexOf(subString);
     if (index == -1) return this!;
-    return this!.substring(0, index) + this!.substring(index + subString.length);
+    return this!.substring(0, index) +
+        this!.substring(index + subString.length);
   }
 
   ///removeLastNCharacters: removes the last n characters
@@ -157,25 +163,31 @@ extension StringExt on String? {
   }
 
   ///removeFirst: removes the first occurrence of a substring
-  String removeFirst(String subString) => this?.replaceFirst(subString, "") ?? "";
+  String removeFirst(String subString) =>
+      this?.replaceFirst(subString, "") ?? "";
 
   ///removeLast: removes the last occurrence of a substring
-  String removeLast(String subString) => this?.replaceFirst(subString, "") ?? "";
+  String removeLast(String subString) =>
+      this?.replaceFirst(subString, "") ?? "";
 
   ///removeRange: removes all characters in the range
-  String removeRange(int startIndex, int endIndex) => this?.replaceRange(startIndex, endIndex, "") ?? "";
+  String removeRange(int startIndex, int endIndex) =>
+      this?.replaceRange(startIndex, endIndex, "") ?? "";
 
   ///removeWhere: removes all characters that satisfy the test
-  String removeWhere(bool Function(String element) test) => this?.replaceAllMapped(RegExp(r''), (Match match) => "") ?? "";
+  String removeWhere(bool Function(String element) test) =>
+      this?.replaceAllMapped(RegExp(r''), (Match match) => "") ?? "";
 
   ///removeExtraSpaces: removes extra spaces from a string
-  String get removeEmptyLines => this?.replaceAll(RegExp(r'\n\s*\n'), '\n') ?? "";
+  String get removeEmptyLines =>
+      this?.replaceAll(RegExp(r'\n\s*\n'), '\n') ?? "";
 
   ///removeExtraSpaces: removes extra spaces from a string
   String get removeExtraSpaces => this?.replaceAll(RegExp(r' +'), ' ') ?? "";
 
   ///removeExtraNewLines: removes extra new lines from a string
-  String get removeExtraNewLines => this?.replaceAll(RegExp(r'\n+'), '\n') ?? "";
+  String get removeExtraNewLines =>
+      this?.replaceAll(RegExp(r'\n+'), '\n') ?? "";
 
   ///removeExtraTabs: removes extra tabs from a string
   String get removeExtraTabs => this?.replaceAll(RegExp(r'\t+'), '\t') ?? "";
@@ -184,19 +196,24 @@ extension StringExt on String? {
   String get removeExtraReturns => this?.replaceAll(RegExp(r'\r+'), '\r') ?? "";
 
   ///removeCommonCharacters: removes common characters from a string
-  String get removeCommonCharacters => this?.replaceAll(RegExp(r'[^a-zA-Z0-9\s]'), '') ?? "";
+  String get removeCommonCharacters =>
+      this?.replaceAll(RegExp(r'[^a-zA-Z0-9\s]'), '') ?? "";
 
   ///removeExtraCharactersExcept: removes extra characters from a string except the ones specified
-  String removeExtraCharactersExcept(String allowedCharacters) => this?.replaceAll(RegExp('[^$allowedCharacters]'), '') ?? "";
+  String removeExtraCharactersExcept(String allowedCharacters) =>
+      this?.replaceAll(RegExp('[^$allowedCharacters]'), '') ?? "";
 
   ///removeExtraCharactersOnly: removes extra characters from a string
-  String removeExtraCharactersOnly(String charactersToRemove) => this?.replaceAll(RegExp('[$charactersToRemove]'), '') ?? "";
+  String removeExtraCharactersOnly(String charactersToRemove) =>
+      this?.replaceAll(RegExp('[$charactersToRemove]'), '') ?? "";
 
   ///removeExtraCharactersFromStart: removes extra characters from the start of a string
-  String removeExtraCharactersFromStart(String charactersToRemove) => this?.replaceFirst(RegExp('^[$charactersToRemove]+'), '') ?? "";
+  String removeExtraCharactersFromStart(String charactersToRemove) =>
+      this?.replaceFirst(RegExp('^[$charactersToRemove]+'), '') ?? "";
 
   ///removeExtraCharactersFromEnd: removes extra characters from the end of a string
-  String removeExtraCharactersFromEnd(String charactersToRemove) => this?.replaceFirst(RegExp('[$charactersToRemove]+\$'), '') ?? "";
+  String removeExtraCharactersFromEnd(String charactersToRemove) =>
+      this?.replaceFirst(RegExp('[$charactersToRemove]+\$'), '') ?? "";
 
   ///toBool: convert a string to bool ('true' == true, 'false' == false, '1' == true, '0' == false)
   bool get toBool {
