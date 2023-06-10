@@ -10,6 +10,7 @@ extension StringExt on String? {
   ///isNumeric: checks if the string is numeric
   bool get isNumeric {
     if (isNull) return false;
+    if (this!.isEmpty) return false;
     final numeric = RegExp(r'^-?[0-9]+$');
     return numeric.hasMatch(this!);
   }
@@ -30,7 +31,9 @@ extension StringExt on String? {
 
   ///isNullOrNumeric: checks if the string is null or numeric
   bool get isNullOrNumeric {
-    return this == null || isNumeric;
+    if (isNull) return true;
+    if (this!.isEmpty) return false;
+    return isNumeric;
   }
 
   ///isNotNullOrNumeric: checks if the string is not null or numeric
