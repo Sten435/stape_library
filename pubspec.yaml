@@ -1,5 +1,6 @@
 name: stape
-description: A Dart/Flutter library that provides extension methods and properties to extend your codebase.
+description: A Dart/Flutter library that provides extension methods and
+  properties to extend your codebase.
 
 version: 1.0.4
 
@@ -9,9 +10,9 @@ environment:
 repository: https://github.com/Sten435/stape_library
 
 platforms:
-  android:
-  web:
-  windows:
+  ? android
+  ? web
+  ? windows
 
 topics:
   - dart
@@ -19,5 +20,6 @@ topics:
   - library
 
 dependencies:
+  test: ^1.24.3
 dev_dependencies:
   lints: ^2.0.0

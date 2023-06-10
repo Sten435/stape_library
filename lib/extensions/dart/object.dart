@@ -129,8 +129,8 @@ extension ObjectExt on Object? {
 
   ///log: Logs the object.
   void get log {
-    if (isNull) print('null');
-    print(this);
+    if (isNull) print(r'null');
+    print('$this');
   }
 
   ///logIf: Logs the object if the condition is true.
