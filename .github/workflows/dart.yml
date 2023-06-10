@@ -26,7 +26,7 @@ jobs:
         run: dart format --output=none --set-exit-if-changed .
         
       - name: Generate documentation
-        run: dart docs
+        run: dart doc
 
       - name: Analyze project source
         run: dart analyze
